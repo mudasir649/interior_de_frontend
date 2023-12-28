@@ -1,0 +1,6 @@
+.div1{
+    background: url(../public/assets/hero-image.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
