@@ -70,6 +70,29 @@ const Hero = () => {
         />
         </div>
       </div>
+      <FadeIn delay={0.2} direction="down" padding fullWidth>
+        <h1 className="mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-white max-w-[1050px] ">
+          {heroTitle}
+        </h1>
+      </FadeIn>
+      <FadeIn delay={0.4} direction="down" padding fullWidth>
+        <h5 className="mt-6 text-center text-lg xs:text-xl text-white max-w-[500px]">
+          {heroSubtitle}
+        </h5>
+      </FadeIn>
+      <FadeIn>
+        <div className="relative w-full xs:w-[460px] mt-11">
+          <input type="text" placeholder="Search" className="rounded-full w-full pl-6 pr-[68px] py-4 bg-primary outline-none text-white text-base xs:text-lg placeholder-white" />
+          <Image 
+          src={searchIcon}
+          className="absolute top-2/4 -translate-y-2/4 right-3 h-11 w-11 cursor-pointer"
+          alt="searchIcon"
+          width={100}
+          height={100}
+          />
+        </div>
+      </FadeIn>
+      <div className="absolute h-[50px] xs:h-[150px] bottom-0 w-full bg-[linear-gradient(180deg,_#ffffff00_0%,_FFF_100%)]" />
     </div>
   );
 };
